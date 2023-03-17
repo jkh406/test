@@ -71,7 +71,7 @@ export const SideNav = (props) => {
                 color="inherit"
                 variant="subtitle1"
               >
-                Devias
+                임준영
               </Typography>
               <Typography
                 color="neutral.400"
@@ -134,13 +134,13 @@ export const SideNav = (props) => {
             color="neutral.100"
             variant="subtitle2"
           >
-            Need more features?
+            테스트 중..
           </Typography>
           <Typography
             color="neutral.500"
             variant="body2"
           >
-            Check out our Pro solution template.
+            naver 사이트로 이동
           </Typography>
           <Box
             sx={{
@@ -155,7 +155,7 @@ export const SideNav = (props) => {
           >
             <img
               alt="Go to pro"
-              src="/assets/devias-kit-pro.png"
+              src="/assets/naver_logo.png"
             />
           </Box>
           <Button
@@ -166,12 +166,12 @@ export const SideNav = (props) => {
               </SvgIcon>
             )}
             fullWidth
-            href="https://material-kit-pro-react.devias.io/"
+            href="https://naver.com"
             sx={{ mt: 2 }}
             target="_blank"
             variant="contained"
           >
-            Pro Live Preview
+            Site 이동
           </Button>
         </Box>
       </Box>

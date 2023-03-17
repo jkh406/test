@@ -1,4 +1,4 @@
-import ChartBarIcon from '@heroicons/react/24/solid/ChartBarIcon';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import CogIcon from '@heroicons/react/24/solid/CogIcon';
 import LockClosedIcon from '@heroicons/react/24/solid/LockClosedIcon';
 import ShoppingBagIcon from '@heroicons/react/24/solid/ShoppingBagIcon';
@@ -10,16 +10,16 @@ import { SvgIcon } from '@mui/material';
 
 export const items = [
   {
-    title: 'Overview',
+    title: '일정관리',
     path: '/',
     icon: (
       <SvgIcon fontSize="small">
-        <ChartBarIcon />
+        <CalendarMonthIcon />
       </SvgIcon>
     )
   },
   {
-    title: 'Customers',
+    title: '전자우편',
     path: '/customers',
     icon: (
       <SvgIcon fontSize="small">
@@ -28,7 +28,7 @@ export const items = [
     )
   },
   {
-    title: 'Companies',
+    title: '전자결재',
     path: '/companies',
     icon: (
       <SvgIcon fontSize="small">
@@ -37,7 +37,7 @@ export const items = [
     )
   },
   {
-    title: 'Account',
+    title: '공문관리',
     path: '/account',
     icon: (
       <SvgIcon fontSize="small">
@@ -46,7 +46,7 @@ export const items = [
     )
   },
   {
-    title: 'Settings',
+    title: '전자게시',
     path: '/settings',
     icon: (
       <SvgIcon fontSize="small">
@@ -73,7 +73,7 @@ export const items = [
     )
   },
   {
-    title: 'Error',
+    title: 'Error Page',
     path: '/404',
     icon: (
       <SvgIcon fontSize="small">

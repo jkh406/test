@@ -20,13 +20,16 @@ import { useAuth } from 'src/hooks/use-auth';
 import { Layout as AuthLayout } from 'src/layouts/auth/layout';
 
 const Page = () => {
+  //SPA(Single Page Application)는 React의 중요한 특징이다. SPA는 단어 그대로 페이지가 1개인 어플리케이션이다. 
+  //SPA는 특정페이지(새롭게 넘어갈 페이지)를 컴포넌트로 미리 세팅하여, 그 페이지로 넘어갈때마다 새로운 HTML페이지를 받을 필요가 없이
+  //동일 페이지에서 세팅해둔 컴포넌트를 펼쳐 보여준다(랜더링). 이러한 SPA를 가능하게 하는 것이 바로 Router이다.
   const router = useRouter();
   const auth = useAuth();
   const [method, setMethod] = useState('email');
   const formik = useFormik({
     initialValues: {
-      email: 'demo@devias.io',
-      password: 'Password123!',
+      email: 'admin@anbtech.co.kr',
+      password: 'admin',
       submit: null
     },
     validationSchema: Yup.object({
@@ -71,7 +74,7 @@ const Page = () => {
     <>
       <Head>
         <title>
-          Login | Devias Kit
+          Login | Test Hompage
         </title>
       </Head>
       <Box
@@ -103,7 +106,7 @@ const Page = () => {
                 color="text.secondary"
                 variant="body2"
               >
-                Don&apos;t have an account?
+                계정을 생성하시겠습니까?
                 &nbsp;
                 <Link
                   component={NextLink}
@@ -159,7 +162,7 @@ const Page = () => {
                   />
                 </Stack>
                 <FormHelperText sx={{ mt: 1 }}>
-                  Optionally you can skip.
+                  이메일 및 패스워드를 입력하세요.
                 </FormHelperText>
                 {formik.errors.submit && (
                   <Typography
@@ -185,7 +188,7 @@ const Page = () => {
                   sx={{ mt: 3 }}
                   onClick={handleSkip}
                 >
-                  Skip authentication
+                  Account Skip
                 </Button>
                 <Alert
                   color="primary"
@@ -193,7 +196,7 @@ const Page = () => {
                   sx={{ mt: 3 }}
                 >
                   <div>
-                    You can use <b>demo@devias.io</b> and password <b>Password123!</b>
+                    관리자 ID <b>admin@anbtech.co.kr</b> 패스워드 <b>admin</b>
                   </div>
                 </Alert>
               </form>
@@ -204,10 +207,10 @@ const Page = () => {
                   sx={{ mb: 1 }}
                   variant="h6"
                 >
-                  Not available in the demo
+                  미 구현
                 </Typography>
                 <Typography color="text.secondary">
-                  To prevent unnecessary costs we disabled this feature in the demo.
+                  미 구현.
                 </Typography>
               </div>
             )}

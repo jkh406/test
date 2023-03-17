@@ -3,6 +3,9 @@ import Document, { Head, Html, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
 import { createEmotionCache } from 'src/utils/create-emotion-cache';
 
+// _document.js는 static html를 구성하기 위한 _app.js에서 구성한 Html body가 어떤 형태로 들어갈지 구성하는 곳
+// Content들을 브라우저가 html로 이해하도록 구조화
+
 const Favicon = () => (
   <>
     <link
